@@ -47,7 +47,7 @@
         ]
       }
     ],
-    "techStack": "CANoe / CAPL / T32 / WireShark / VN5620 / VX1000 / SourceInsight / VSCode / Jira / Confluence",
+    "techStack": "CANoe / T32 / WireShark / VN5620 / VX1000 / SourceInsight / VSCode / Jira / Confluence",
     "competencies": [
       "요구사항 분석 및 검증 설계 경험",
       "CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해",
@@ -159,7 +159,7 @@
         ]
       }
     ],
-    "techStack": "CANoe / CANoe.DiVa / CANdelaStudio / WireShark / H-OTA Studio / Indigo / C# / VN5620 / Jira / Confluence",
+    "techStack": "CANoe / CANoe.DiVa / CANdelaStudio / WireShark / H-OTA Studio / Indigo / VN5620 / Jira / Confluence",
     "competencies": [
       "ISO/SAE 21434 기반 보안 요구사항 이해",
       "SecurityAccess / SecureFlash 보안 기능 검증 경험",
@@ -212,7 +212,7 @@
         ]
       }
     ],
-    "techStack": "VN1640 / CANoe / vTestStudio / dSPACE (AutomationDesk / ModelDesk / ControlDesk / SYNECT) / CANape",
+    "techStack": "VN1640 / CANoe / vTestStudio / dSPACE / AutomationDesk / ModelDesk / ControlDesk / SYNECT / CANape",
     "competencies": [
       "기능 요구사항 기반 테스트 설계 경험",
       "CAN-FD 통신 및 UDS 진단통신 이해",
@@ -265,7 +265,7 @@
         ]
       }
     ],
-    "techStack": "HILS 환경 구성 / 요구사항 분석 / Test Specification / 자동화 스크립트 개발 / Regression Test / A-SPICE 대응 문서 작성 (영문)",
+    "techStack": "VN1640 / CANoe / vTestStudio / VTSystem",
     "competencies": [
       "A-SPICE 대응 검증 프로세스 경험",
       "시스템 요구사항 기반 테스트 설계 경험",
@@ -279,7 +279,7 @@
     "meta": {
       "customer": "현대오트론",
       "period": "2020.02 – 2020.11",
-      "ecu": "IBU / ICU / SMK / MFSW / CLU",
+      "ecu": "IBU / ICU / SMK / MFSW / CLU 등",
       "role": "SW 기능 검증 엔지니어 (5인 프로젝트)"
     },
     "overview": [
@@ -365,13 +365,13 @@
         ]
       }
     ],
-    "techStack": "SWRS 분석 / Test Case Specification / ISO26262 ASIL-B 대응 / 영문 기술 문서 작성",
+    "techStack": "ISO26262 / A-SPICE",
     "competencies": [
       "Safety 요구사항 기반 분석 경험",
-      "요구사항 100% Coverage 확보 경험",
+      "요구사항 Coverage 확보 경험",
       "글로벌 OEM 협업 경험",
       "영문 기술 문서 작성 능력"
     ],
-    "summary": "ISO 26262 ASIL-B 대응 및 SWRS 기반 100% Requirement Coverage 달성 경험"
+    "summary": "ISO 26262 ASIL-B 대응 및 SWRS 기반 Requirement Coverage 달성 경험"
   }
 }

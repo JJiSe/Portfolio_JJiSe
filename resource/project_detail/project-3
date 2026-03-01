@@ -28,7 +28,7 @@ H-OTA Studio 기반 다운로드 시나리오 설계
 무결성 위반 시 ECU 응답 검증
 
 3️⃣ 기술 스택
-CANoe / CANoe.DiVa / CANdelaStudioWireShark / H-OTA Studio / Indigo / C#VN5620 / Jira / Confluence
+CANoe / CANoe.DiVa / CANdelaStudioWireShark / H-OTA Studio / IndigoVN5620 / Jira / Confluence
 4️⃣ HL만도 JD 적합 역량 매칭
 ✔ ISO/SAE 21434 기반 보안 요구사항 이해✔ SecurityAccess / SecureFlash 보안 기능 검증 경험✔ AUTOSAR 진단 구조 및 UDS 프로토콜 이해✔ Ethernet 기반 진단 통신 분석 경험✔ 요구사항-설계-테스트 정합성 검증 경험
 

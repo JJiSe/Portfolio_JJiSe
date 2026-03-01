@@ -24,6 +24,6 @@ SW 검증 환경 구성 (HW Wiring 포함)
 총 9건 이슈 검출
 수정 SW 대상 Regression Test 수행
 📌 End-to-End 검증 프로세스 전 과정 수행 경험
-3️⃣ 기술 요소
-HILS 환경 구성요구사항 분석 / Test Specification자동화 스크립트 개발Regression TestA-SPICE 대응 문서 작성 (영문)
+3️⃣ 기술 스택
+VN1640 / CANoe / vTestStudio / VTSystem
 

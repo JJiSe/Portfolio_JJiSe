@@ -28,7 +28,7 @@ WireShark 기반 패킷 로그 분석 및 이슈 도출
 T32 활용 M7 Core 동작 분석
 C코드 기반 기능 추적 및 검증 설계 수립
 3️⃣ 기술 스택
-CANoe / CAPL / T32 / WireShark / VN5620 / VX1000SourceInsight / VSCode / Jira / Confluence
+CANoe / T32 / WireShark / VN5620 / VX1000SourceInsight / VSCode / Jira / Confluence
 4️⃣ HL만도 JD 적합 역량 매칭
 ✔ 요구사항 분석 및 검증 설계 경험✔ CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해✔ 통신 오류 분석 및 이슈 해결 주도 경험✔ 고객사(Hyundai/Kefico) 기술 협업 및 대응 경험✔ 자동화 기반 검증 신뢰성 향상
 

@@ -165,6 +165,74 @@ function initScrollReveal() {
 }
 
 /**
+ * 기술 스택 카테고리 매핑 (프로젝트 상세용)
+ * - 문자열 techStack을 파싱하여 카테고리별로 그룹화
+ */
+const TECH_CATEGORY_MAP = {
+  Language: ['CAPL', 'C#'],
+  Hardware: ['T32', 'VN5620', 'VX1000', 'VN1640', 'VT System', 'NI HILS 장비', 'Vector', 'dSPACE'],
+  Software: [
+    'CANoe', 'vTestStudio', 'CANdelaStudio', 'CANoe.DiVa', 'WireShark', 'H-OTA Studio', 'Indigo',
+    'CANape', 'Veristand', 'dysnomia', 'SourceInsight', 'VSCode',
+    'AutomationDesk', 'ModelDesk', 'ControlDesk', 'SYNECT'
+  ],
+  'Configuration Management': ['Jira', 'Confluence', 'Bitbucket', 'SourceTree', 'Sourcetree'],
+  'Process/Methodology': [
+    'HILS 환경 구성', '요구사항 분석', 'Test Specification', '자동화 스크립트 개발',
+    'Regression Test', 'A-SPICE 대응 문서 작성 (영문)', 'SWRS 분석', 'Test Case Specification',
+    'ISO26262 ASIL-B 대응', '영문 기술 문서 작성'
+  ]
+};
+
+function renderTechStackByCategory(techStack) {
+  if (!techStack) return '<p class="project-detail__tech">-</p>';
+  const categories = typeof techStack === 'object' && !Array.isArray(techStack)
+    ? techStack
+    : categorizeTechStack(techStack);
+  const entries = Object.entries(categories).filter(([, items]) => items?.length);
+  if (!entries.length) return '<p class="project-detail__tech">-</p>';
+  return `
+    <div class="project-detail__tech-list">
+      ${entries.map(([cat, items]) => `
+        <div class="project-detail__tech-row">
+          <span class="project-detail__tech-label">${cat}</span>
+          <span class="project-detail__tech-items">${items.join(', ')}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function categorizeTechStack(techStackStr) {
+  if (!techStackStr || typeof techStackStr !== 'string') return {};
+  const items = techStackStr.split('/').map(s => s.trim()).filter(Boolean);
+  const result = {};
+
+  for (const item of items) {
+    let category = 'Etc.';
+    for (const [cat, tools] of Object.entries(TECH_CATEGORY_MAP)) {
+      if (tools.some(t => item.includes(t) || t.includes(item))) {
+        category = cat;
+        break;
+      }
+    }
+    if (!result[category]) result[category] = [];
+    if (!result[category].includes(item)) result[category].push(item);
+  }
+
+  // 카테고리 표시 순서
+  const order = ['Language', 'Hardware', 'Software', 'Configuration Management', 'Process/Methodology', 'Etc.'];
+  const sorted = {};
+  for (const cat of order) {
+    if (result[cat]?.length) sorted[cat] = result[cat];
+  }
+  for (const cat of Object.keys(result)) {
+    if (!sorted[cat]) sorted[cat] = result[cat];
+  }
+  return sorted;
+}
+
+/**
  * 기술 스택 아이콘 적용
  * - slug (string): Simple Icons CDN 사용
  * - { url: string }: 커스텀 이미지 URL (Vector CANoe 등)
@@ -273,7 +341,7 @@ function renderProjectDetail(project) {
 
       <section class="project-detail__section">
         <h3>기술 스택</h3>
-        <p class="project-detail__tech">${project.techStack || '-'}</p>
+        ${renderTechStackByCategory(project.techStack)}
       </section>
 
       <section class="project-detail__section">

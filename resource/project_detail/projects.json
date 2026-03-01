@@ -9,7 +9,7 @@
       "role": "M7 Core SW 검증 실무 겸 PL (2인 프로젝트 리딩)"
     },
     "overview": [
-      "ASPICE 기반 양산 단계 제어기 통신 및 SW 요구사항 검증",
+      "양산 단계 제어기 통신 및 SW 요구사항 검증",
       "CAN-FD 6채널 / Ethernet(TCP/IP, SOME/IP) 통신 적합성 평가",
       "기능/비기능 요구사항 분석 및 검증 설계 수행"
     ],
@@ -49,8 +49,8 @@
     ],
     "techStack": "CANoe / CAPL / T32 / WireShark / VN5620 / VX1000 / SourceInsight / VSCode / Jira / Confluence",
     "competencies": [
-      "ASPICE 기반 요구사항 분석 및 검증 설계 경험",
-      "CAN/CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해",
+      "요구사항 분석 및 검증 설계 경험",
+      "CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해",
       "통신 오류 분석 및 이슈 해결 주도 경험",
       "고객사(Hyundai/Kefico) 기술 협업 및 대응 경험",
       "자동화 기반 검증 신뢰성 향상"
@@ -85,8 +85,8 @@
       {
         "title": "자동화 및 형상관리 체계 구축",
         "items": [
-          "vTestStudio 기반 자동화 프레임워크 개발/유지보수",
-          "Bitbucket 기반 스크립트 형상관리 체계 정립",
+          "vTestStudio 기반 자동화 스크립트 개발/유지보수",
+          "Bitbucket 기반 평가환경/자동화 스크립트 형상관리 체계 정립",
           "Jira/Confluence 기반 이슈 히스토리 관리 체계 개선",
           "이전 SW Version 대비 개선 여부 추적 체계 도입 → 고객사 공식 채택"
         ]
@@ -105,7 +105,7 @@
     "techStack": "VT System / VN1640 / CANoe / vTestStudio / Jira / Confluence / Bitbucket / SourceTree",
     "competencies": [
       "진단 및 통신 요구사항 분석 및 시스템 반영 경험",
-      "CAN 통신 분석 및 검증 환경 설계 경험",
+      "CAN-FD 통신 분석 및 검증 환경 설계 경험",
       "AUTOSAR 기반 진단 구조 이해(UDS/DTC 흐름)",
       "글로벌 OEM Tier-1 협업 경험",
       "PL 경험 (다수 ECU 병행 관리)"
@@ -131,7 +131,7 @@
         "title": "SecurityAccess(0x27) 보안 요구사항 검증",
         "subtitle": "기준: ISO14229 / ES95486-02",
         "items": [
-          "Seed/Key 기반 인증 절차 검증",
+          "Advanced Seed&Key 인증 절차 검증",
           "12개 테스트케이스 자동화 구현 (C#, Indigo 활용)",
           "인증 실패/Retry 제한/Lockout 조건 검증",
           "진단 보안 요구사항의 동작 흐름 분석 및 자동화 체계 구축"
@@ -142,7 +142,7 @@
         "subtitle": "기준: ES95486-02 / ES95486-12",
         "items": [
           "CANoe.DiVa 기반 자동화 평가 수행",
-          "UDS 변경 사양 반영을 위한 *.cdd 직접 수정 (CANdelaStudio)",
+          "고객사 요구 사양 반영을 위한 *.cdd 직접 수정 (CANdelaStudio)",
           "Diagnostic Session / Service 흐름 분석",
           "설계 스펙 대비 테스트 스펙 정합성 검증",
           "요구사항-설계-테스트 스펙 간 정합성 분석 경험"
@@ -155,8 +155,7 @@
           "무결성 유지 RomData vs 변조 RomData 비교 검증",
           "H-OTA Studio 기반 다운로드 시나리오 설계",
           "이더넷 TCP/IP 패킷 분석 (WireShark)",
-          "무결성 위반 시 ECU 응답 검증",
-          "Secure Diagnostics 및 무결성 요구사항 해석 경험"
+          "무결성 위반 시 ECU 응답 검증"
         ]
       }
     ],
@@ -208,7 +207,7 @@
         "title": "UDS 진단통신 검증 수행 (MAR120)",
         "items": [
           "ISO14229 기반 UDS 서비스 검증",
-          "CAN 기반 진단 메시지 분석",
+          "CAN-FD 기반 진단 메시지 분석",
           "진단통신 검증 역량 인정 → Cyber Security 프로젝트 수주로 확장"
         ]
       }
@@ -216,7 +215,7 @@
     "techStack": "VN1640 / CANoe / vTestStudio / dSPACE (AutomationDesk / ModelDesk / ControlDesk / SYNECT) / CANape",
     "competencies": [
       "기능 요구사항 기반 테스트 설계 경험",
-      "CAN 통신 및 UDS 진단통신 이해",
+      "CAN-FD 통신 및 UDS 진단통신 이해",
       "요구사항–테스트 간 추적성 확보 경험",
       "HILS 기반 제어기 기능 검증 경험"
     ],

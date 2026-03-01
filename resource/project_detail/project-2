@@ -18,8 +18,8 @@ CAN 통신 흐름 분석
 Diagnostic Session / Service 흐름 기반 평가 설계
 신규 ECU 통신 요구사항 반영 구조 설계
 ■ ② 자동화 및 형상관리 체계 구축
-vTestStudio 기반 자동화 프레임워크 개발/유지보수
-Bitbucket 기반 스크립트 형상관리 체계 정립
+vTestStudio 기반 자동화 스크립트 개발/유지보수
+Bitbucket 기반 평가환경/자동화 스크립트 형상관리 체계 정립
 Jira/Confluence 기반 이슈 히스토리 관리 체계 개선
 📌 이전 SW Version 대비 개선 여부 추적 체계 도입→ 고객사 공식 채택
 ■ ③ 조직 리딩 및 검증 프로세스 개선
@@ -31,6 +31,6 @@ VT System HW Wiring 직접 구성
 3️⃣ 기술 스택
 VT System / VN1640 / CANoe / vTestStudioJira / Confluence / Bitbucket / SourceTree
 4️⃣ HL만도 JD 적합 역량 매칭
-✔ 진단 및 통신 요구사항 분석 및 시스템 반영 경험✔ CAN 통신 분석 및 검증 환경 설계 경험✔ AUTOSAR 기반 진단 구조 이해(UDS/DTC 흐름)✔ 글로벌 OEM Tier-1 협업 경험✔ PL 경험 (다수 ECU 병행 관리)
+✔ 진단 및 통신 요구사항 분석 및 시스템 반영 경험✔ CAN-FD 통신 분석 및 검증 환경 설계 경험✔ AUTOSAR 기반 진단 구조 이해(UDS/DTC 흐름)✔ 글로벌 OEM Tier-1 협업 경험✔ PL 경험 (다수 ECU 병행 관리)
 
 “다수 ECU 통신 요구사항을 통합 분석하여 신규 제어기 적용 시 재사용 가능한 통합 검증 아키텍처를 설계”

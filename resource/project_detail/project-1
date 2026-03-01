@@ -2,7 +2,7 @@
 (고객사: 현대자동차 / 현대케피코)기간: 2025.06 – 2025.10대상 ECU: VPC-P (NXP S32G274A, A53/M7 Dual Core)역할: M7 Core SW 검증 실무 겸 PL (2인 프로젝트 리딩)
 
 1️⃣ 프로젝트 개요
-ASPICE 기반 양산 단계 제어기 통신 및 SW 요구사항 검증
+양산 단계 제어기 통신 및 SW 요구사항 검증
 CAN-FD 6채널 / Ethernet(TCP/IP, SOME/IP) 통신 적합성 평가
 기능/비기능 요구사항 분석 및 검증 설계 수행
 2️⃣ 수행 역할 및 주요 기여
@@ -30,7 +30,7 @@ C코드 기반 기능 추적 및 검증 설계 수립
 3️⃣ 기술 스택
 CANoe / CAPL / T32 / WireShark / VN5620 / VX1000SourceInsight / VSCode / Jira / Confluence
 4️⃣ HL만도 JD 적합 역량 매칭
-✔ ASPICE 기반 요구사항 분석 및 검증 설계 경험✔ CAN/CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해✔ 통신 오류 분석 및 이슈 해결 주도 경험✔ 고객사(Hyundai/Kefico) 기술 협업 및 대응 경험✔ 자동화 기반 검증 신뢰성 향상
+✔ 요구사항 분석 및 검증 설계 경험✔ CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해✔ 통신 오류 분석 및 이슈 해결 주도 경험✔ 고객사(Hyundai/Kefico) 기술 협업 및 대응 경험✔ 자동화 기반 검증 신뢰성 향상
 
 “통신 요구사항을 단순 검증이 아닌, 설계 사양 관점에서 분석하고 요구사항 정합성을 재정의한 경험 보유”
 

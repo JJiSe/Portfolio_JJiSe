@@ -363,7 +363,6 @@ function renderProjectCard(projectId, project) {
   return `
     <article class="project-card" data-project-id="${projectId}">
       <div class="project-card__header">
-        <span class="project-card__period">${meta.period || ''}</span>
         <span class="project-card__customer">${meta.customer || ''}</span>
       </div>
       <h3 class="project-card__title">${project.title}</h3>

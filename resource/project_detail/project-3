@@ -9,14 +9,14 @@ Ethernet TCP/IP 기반 진단 통신 패킷 분석
 2️⃣ 주요 수행 내용
 ■ ① SecurityAccess(0x27) 보안 요구사항 검증
 (기준: ISO14229 / ES95486-02)
-Seed/Key 기반 인증 절차 검증
+Advanced Seed&Key 인증 절차 검증
 12개 테스트케이스 자동화 구현 (C#, Indigo 활용)
 인증 실패/Retry 제한/Lockout 조건 검증
 📌 진단 보안 요구사항의 동작 흐름 분석 및 자동화 체계 구축
 ■ ② UDS 진단통신 요구사항 분석 및 자동화
 (기준: ES95486-02 / ES95486-12)
 CANoe.DiVa 기반 자동화 평가 수행
-UDS 변경 사양 반영을 위한 *.cdd 직접 수정 (CANdelaStudio)
+고객사 요구 사양 반영을 위한 *.cdd 직접 수정 (CANdelaStudio)
 Diagnostic Session / Service 흐름 분석
 설계 스펙 대비 테스트 스펙 정합성 검증
 📌 요구사항-설계-테스트 스펙 간 정합성 분석 경험
@@ -26,7 +26,6 @@ Diagnostic Session / Service 흐름 분석
 H-OTA Studio 기반 다운로드 시나리오 설계
 이더넷 TCP/IP 패킷 분석 (WireShark)
 무결성 위반 시 ECU 응답 검증
-📌 Secure Diagnostics 및 무결성 요구사항 해석 경험
 
 3️⃣ 기술 스택
 CANoe / CANoe.DiVa / CANdelaStudioWireShark / H-OTA Studio / Indigo / C#VN5620 / Jira / Confluence

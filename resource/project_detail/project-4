@@ -21,10 +21,10 @@ dSPACE–Vector 툴 연동 환경 운용
 📌 제어기 동작 로직 이해 기반 기능 검증 수행
 ■ ③ UDS 진단통신 검증 수행 (MAR120)
 ISO14229 기반 UDS 서비스 검증
-CAN 기반 진단 메시지 분석
+CAN-FD 기반 진단 메시지 분석
 진단통신 검증 역량 인정 → Cyber Security 프로젝트 수주로 확장
 3️⃣ 기술 스택
 VN1640 / CANoe / vTestStudiodSPACE (AutomationDesk / ModelDesk / ControlDesk / SYNECT)CANape
 4️⃣ HL만도 JD 적합 역량 매칭
-✔ 기능 요구사항 기반 테스트 설계 경험✔ CAN 통신 및 UDS 진단통신 이해✔ 요구사항–테스트 간 추적성 확보 경험✔ HILS 기반 제어기 기능 검증 경험
+✔ 기능 요구사항 기반 테스트 설계 경험✔ CAN-FD 통신 및 UDS 진단통신 이해✔ 요구사항–테스트 간 추적성 확보 경험✔ HILS 기반 제어기 기능 검증 경험
 

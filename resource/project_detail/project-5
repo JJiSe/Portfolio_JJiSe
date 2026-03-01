@@ -1,0 +1,29 @@
+🔷 OMU HILS Qualification 시험 (ASPICE 기반 검증 전과정 수행)
+(고객사: SMR Korea / 현대자동차 JW1 적용)기간: 2020.11 – 2021.02역할: SW 검증 엔지니어 (3인 프로젝트)
+
+1️⃣ 프로젝트 개요
+OMU 제어기 HILS 기반 Qualification 시험 수행
+A-SPICE 대응 가능 수준의 검증 프로세스 적용
+시스템 요구사항(SyRS) 기반 SW 기능 검증
+2️⃣ 주요 수행 내용
+■ ① 시스템 요구사항 분석 및 정제
+고객사 SyRS 분석
+기능 단위 6개 그룹으로 재분류
+테스트 가능/불가 여부 판별
+모호·정량 미정의 항목 질의 및 명확화
+📌 검증 가능 요구사항으로 재정의
+■ ② 요구사항 기반 Test Specification 작성
+130여 개 요구사항 → 500여 개 테스트케이스 도출
+요구사항-테스트 간 100% Traceability 확보
+ASIL 등급 반영 결과 보고서 작성
+📌 요구사항 기반 테스트 설계 역량 확보
+
+■ ③ HILS 환경 구성 및 자동화 평가
+SW 검증 환경 구성 (HW Wiring 포함)
+자동화 Test Script 개발 및 수행
+총 9건 이슈 검출
+수정 SW 대상 Regression Test 수행
+📌 End-to-End 검증 프로세스 전 과정 수행 경험
+3️⃣ 기술 요소
+HILS 환경 구성요구사항 분석 / Test Specification자동화 스크립트 개발Regression TestA-SPICE 대응 문서 작성 (영문)
+

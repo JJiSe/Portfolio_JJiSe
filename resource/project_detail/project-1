@@ -1,0 +1,37 @@
+🔷 VPC-P 양산개발 프로젝트 – M7 Core SW 검증 PL
+(고객사: 현대자동차 / 현대케피코)기간: 2025.06 – 2025.10대상 ECU: VPC-P (NXP S32G274A, A53/M7 Dual Core)역할: M7 Core SW 검증 실무 겸 PL (2인 프로젝트 리딩)
+
+1️⃣ 프로젝트 개요
+ASPICE 기반 양산 단계 제어기 통신 및 SW 요구사항 검증
+CAN-FD 6채널 / Ethernet(TCP/IP, SOME/IP) 통신 적합성 평가
+기능/비기능 요구사항 분석 및 검증 설계 수행
+2️⃣ 수행 역할 및 주요 기여
+■ ① CAN-FD 통신 요구사항 분석 및 검증 체계 구축
+(기준: 현대자동차 ES90700-02)
+요구사항 분석 → 평가 가능/불가 항목 구분
+6채널 동시 통신 환경 기준 검증 전략 수립
+CANoe 기반 통합 평가 환경 설계 및 구축
+High Bus Load / Periodic Msg / CRC / Alive Counter 검증
+📌 자동화 고도화
+CRC/AliveCounter 계산·검증 CAPL 자동화 구현
+수동 검증 대비 휴먼에러 제거 및 평가 신뢰성 향상
+E2E 미구현 메시지 5건 이상 검출 및 이슈 리포트
+■ ② Ethernet 통신 요구사항 분석
+(기준: ES96595-10 TCP/IP / ES96595-12 SOME/IP)
+설계 사양 vs 평가 사양 비교 분석
+적용/미적용 항목 정의
+WireShark 기반 패킷 로그 분석 및 이슈 도출
+모니터링 기반 선행 검증 전략 수립
+■ ③ 기능/비기능 요구사항 정제 및 검증 설계
+요구사항 모호 표현 정의 및 용어 정리
+검증 가능 영역 재정의
+T32 활용 M7 Core 동작 분석
+C코드 기반 기능 추적 및 검증 설계 수립
+3️⃣ 기술 스택
+CANoe / CAPL / T32 / WireShark / VN5620 / VX1000SourceInsight / VSCode / Jira / Confluence
+4️⃣ HL만도 JD 적합 역량 매칭
+✔ ASPICE 기반 요구사항 분석 및 검증 설계 경험✔ CAN/CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해✔ 통신 오류 분석 및 이슈 해결 주도 경험✔ 고객사(Hyundai/Kefico) 기술 협업 및 대응 경험✔ 자동화 기반 검증 신뢰성 향상
+
+“통신 요구사항을 단순 검증이 아닌, 설계 사양 관점에서 분석하고 요구사항 정합성을 재정의한 경험 보유”
+
+

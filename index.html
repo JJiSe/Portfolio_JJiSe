@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="지세영 Vehicle SW Engineer 포트폴리오 - 차량 SW 검증 및 평가 전문가">
+  <title>포트폴리오 | Professional Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 모바일 메뉴 토글 (항상 보이는 버튼) -->
+  <button class="sidebar__toggle sidebar__toggle--fixed" aria-label="메뉴 열기">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- 왼쪽 사이드바 네비게이션 -->
+  <aside class="sidebar">
+    <nav class="sidebar__nav">
+      <a href="#" class="sidebar__logo">Portfolio</a>
+      <ul class="sidebar__menu">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#education">학력</a></li>
+        <li><a href="#experience">경력</a></li>
+        <li><a href="#competencies">핵심 역량</a></li>
+        <li><a href="#skills">스킬</a></li>
+        <li><a href="#history">프로젝트 이력</a></li>
+        <li><a href="#projects">프로젝트 상세</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- 사이드바 열렸을 때 배경 오버레이 -->
+  <div class="sidebar__backdrop" aria-hidden="true"></div>
+
+  <main class="main-content">
+    <!-- 히어로 섹션 -->
+    <section class="hero" id="hero">
+      <div class="hero__content container">
+        <p class="hero__greeting">안녕하세요, 실력으로 증명하는 엔지니어</p>
+        <h1 class="hero__name">지세영</h1>
+        <p class="hero__title">Vehicle SW Engineer</p>
+        <p class="hero__tagline">차량 SW 검증 및 평가 전문가. CAN 기반 통신 검증, ECU 기능 시험, 시스템 레벨 검증 경험을 보유하고 있습니다.</p>
+        <div class="hero__actions">
+          <a href="#history" class="btn btn--primary">프로젝트 이력 보기</a>
+          <a href="#contact" class="btn btn--outline">연락하기</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">소개</h2>
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="images/profile.png" alt="지세영 프로필 사진" class="about__profile-img">
+          </div>
+          <div class="about__content">
+            <h3>프로필</h3>
+            <ul class="about__profile">
+              <li>생년월일: 1994.09.21</li>
+              <li>연락처: 010-4129-0921</li>
+              <li>Email: jisey0921@gmail.com</li>
+              <li>Kakao ID: jisey0921</li>
+            </ul>
+            <h3>경력 요약</h3>
+            <p>
+              슈어소프트테크에서 2019년 8월부터 2025년 10월까지 차량 SW 검증 및 평가 업무를 수행했습니다.
+              CAN 기반 통신 검증 및 테스트 자동화, ECU 기능 시험, 시스템 레벨 검증 경험을 보유하고 있으며,
+              ISTQB CTFL 자격증을 취득하여 품질 검증 역량을 갖추고 있습니다.
+            </p>
+            <ul class="about__highlights">
+              <li>6년+ 차량 SW 검증 경력</li>
+              <li>CAN 통신 검증 및 테스트 자동화</li>
+              <li>ISTQB CTFL 자격 보유</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 학력 섹션 -->
+    <section class="education section section--alt" id="education">
+      <div class="container">
+        <h2 class="section__title">학력</h2>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2013 – 2019</span>
+              <h3>충남대학교</h3>
+              <p class="timeline__company">학사</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2010 – 2013</span>
+              <h3>서천여자고등학교</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 경력 섹션 -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <h2 class="section__title">경력</h2>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2019.08 – 2025.10</span>
+              <h3>차량 SW 검증 엔지니어</h3>
+              <p class="timeline__company">슈어소프트테크</p>
+              <ul>
+                <li>차량 SW 검증 및 평가 업무 수행</li>
+                <li>CAN 기반 통신 검증 및 테스트 자동화 수행</li>
+                <li>ECU 기능 시험 및 시스템 레벨 검증</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 핵심 역량 섹션 -->
+    <section class="competencies section section--alt" id="competencies">
+      <div class="container">
+        <h2 class="section__title">핵심 역량</h2>
+        <div class="competencies__grid">
+          <article class="competencies__item">
+            <h3 class="competencies__title">A-SPICE 기반 요구사항 정합성 확보</h3>
+            <p class="competencies__desc">A-SPICE 프로세스에 따라 차량 제어기 SW 요구사항을 분석하고 시스템 요구사항과의 정합성을 검토했습니다. 요구사항을 기능 단위로 구조화하고 시험 가능성 관점에서 재정의하여 130여 개 요구사항에 대해 500건 이상의 검증 항목을 도출했습니다. 기능/비기능 요구사항을 구분하고, 수치 기준 및 조건이 불명확한 항목을 식별하여 명확화 의견을 제시함으로써 요구사항의 완성도를 높였습니다.</p>
+          </article>
+          <article class="competencies__item">
+            <h3 class="competencies__title">CAN FD, Ethernet, SOME/IP, E2E 통신 아키텍처 분석</h3>
+            <p class="competencies__desc">CAN FD 및 Ethernet 기반 SOME/IP 통신 구조를 분석하며 차량 통신 아키텍처를 이해해왔습니다. 메시지 주기, Bus Load, 프레임 구조 및 E2E Profile-5 보호 메커니즘을 기반으로 통신 신뢰성 요구사항을 검토했습니다. CRC 및 Alive Counter 동작 원리를 분석하고 자동화 검증 환경을 구성하여 요구사항 충족 여부를 확인했습니다.</p>
+          </article>
+          <article class="competencies__item">
+            <h3 class="competencies__title">UDS 진단 및 CAN 문제 해결</h3>
+            <p class="competencies__desc">UDS 진단 및 통신 요구사항을 해석하여 제어기 동작 조건을 검증하고, 고부하 환경에서 발생한 Timeout 및 Bus-Off 이슈를 분석했습니다. 통신 로그를 기반으로 메시지 흐름과 오류 발생 조건을 구조화하고, 요구사항 조건과 실제 동작 간 차이를 비교하여 개선이 필요한 항목을 도출했습니다. 통신 요구사항을 실제 시스템 동작과 연결해 해석하고 문제 해결에 적용한 경험을 보유하고 있습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 스킬 섹션 -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">기술 스택</h2>
+        <div class="skills__license">
+          <h4>자격증</h4>
+          <p>ISTQB CTFL (2023.08 취득)</p>
+        </div>
+        <div class="skills__grid">
+          <div class="skills__category">
+            <h4>Language</h4>
+            <ul class="skills__list">
+              <li>CAPL</li>
+              <li>C#</li>
+            </ul>
+          </div>
+          <div class="skills__category">
+            <h4>Hardware</h4>
+            <ul class="skills__list">
+              <li>Vector</li>
+              <li>dSPACE</li>
+              <li>T32</li>
+            </ul>
+          </div>
+          <div class="skills__category">
+            <h4>Software</h4>
+            <ul class="skills__list">
+              <li>CANoe</li>
+              <li>vTestStudio</li>
+              <li>CANdelaStudio</li>
+              <li>CANoe.DiVa</li>
+              <li>WireShark</li>
+              <li>H-OTA Studio</li>
+              <li>Indigo</li>
+              <li>CANape</li>
+            </ul>
+          </div>
+          <div class="skills__category">
+            <h4>형상 관리</h4>
+            <ul class="skills__list">
+              <li>Jira</li>
+              <li>Confluence</li>
+              <li>Bitbucket</li>
+              <li>Sourcetree</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 이력 섹션 -->
+    <section class="history section section--alt" id="history">
+      <div class="container">
+        <h2 class="section__title">프로젝트 이력</h2>
+        <div class="history-timeline timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2025.06 – 2025.10</span>
+              <h3>VPC-P 양산개발 프로젝트 M7부 SW 검증 용역</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024.06 – 2025.05</span>
+              <h3>자율주행 제품 평가 시험 용역</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024.08 – 2025.04</span>
+              <h3>MAR130(SP3번들) 코너레이더 평가 용역</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024.02 – 2024.12</span>
+              <h3>24년 ADAS_DRV 평가 용역</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024.02 – 2024.05</span>
+              <h3>레이더 자동화 평가 스크립트 개발 및 검증 평가</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2023.10 – 2024.04</span>
+              <h3>23년 전방 카메라 및 ADASDRV1.5 제어기 고장진단 검증 용역</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022.05 – 2023.06</span>
+              <h3>Cyber Security 기능 검증 용역</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2021.03 – 2022.04</span>
+              <h3>SVM/레이더 SW 기능 검증 용역</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2020.11 – 2021.02</span>
+              <h3>OMU HILS Qualification 시험</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2020.02 – 2020.11</span>
+              <h3>바디통합 HILS 검증</h3>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2019.08 – 2020.01</span>
+              <h3>McLaren CMS SW HILS 검증</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 상세 섹션 -->
+    <section class="featured-projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">프로젝트 상세</h2>
+        <div class="featured-projects__grid" id="featuredProjectsGrid">
+          <!-- 카드 동적 로드 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 연락처 섹션 (풀스크린) -->
+    <section class="contact contact--fullscreen" id="contact">
+      <div class="contact__card">
+        <div class="contact__card-left">
+          <span class="contact__card-thanks">THANK YOU</span>
+        </div>
+        <div class="contact__card-divider"></div>
+        <div class="contact__card-right">
+          <p class="contact__card-name">지 세 영</p>
+          <span class="contact__card-info">TEL: 010-4129-0921</span>
+          <a href="mailto:jisey0921@gmail.com" class="contact__card-info">Email: jisey0921@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 jisey0921@gmail.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 프로젝트 상세 모달 -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__container">
+      <button class="modal__close" data-modal-close aria-label="닫기">×</button>
+      <div class="modal__content" id="projectModalContent">
+        <!-- 동적 로드 -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

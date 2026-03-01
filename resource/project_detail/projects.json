@@ -1,0 +1,378 @@
+{
+  "featuredOrder": ["project-1", "project-2", "project-3", "project-4", "project-5", "project-6", "project-7"],
+  "project-1": {
+    "title": "VPC-P 양산개발 프로젝트 – M7 Core SW 검증 PL",
+    "meta": {
+      "customer": "현대자동차 / 현대케피코",
+      "period": "2025.06 – 2025.10",
+      "ecu": "VPC-P (NXP S32G274A, A53/M7 Dual Core)",
+      "role": "M7 Core SW 검증 실무 겸 PL (2인 프로젝트 리딩)"
+    },
+    "overview": [
+      "ASPICE 기반 양산 단계 제어기 통신 및 SW 요구사항 검증",
+      "CAN-FD 6채널 / Ethernet(TCP/IP, SOME/IP) 통신 적합성 평가",
+      "기능/비기능 요구사항 분석 및 검증 설계 수행"
+    ],
+    "tasks": [
+      {
+        "title": "CAN-FD 통신 요구사항 분석 및 검증 체계 구축",
+        "subtitle": "기준: 현대자동차 ES90700-02",
+        "items": [
+          "요구사항 분석 → 평가 가능/불가 항목 구분",
+          "6채널 동시 통신 환경 기준 검증 전략 수립",
+          "CANoe 기반 통합 평가 환경 설계 및 구축",
+          "High Bus Load / Periodic Msg / CRC / Alive Counter 검증",
+          "자동화 고도화: CRC/AliveCounter 계산·검증 CAPL 자동화 구현",
+          "수동 검증 대비 휴먼에러 제거 및 평가 신뢰성 향상",
+          "E2E 미구현 메시지 5건 이상 검출 및 이슈 리포트"
+        ]
+      },
+      {
+        "title": "Ethernet 통신 요구사항 분석",
+        "subtitle": "기준: ES96595-10 TCP/IP / ES96595-12 SOME/IP",
+        "items": [
+          "설계 사양 vs 평가 사양 비교 분석",
+          "적용/미적용 항목 정의",
+          "WireShark 기반 패킷 로그 분석 및 이슈 도출",
+          "모니터링 기반 선행 검증 전략 수립"
+        ]
+      },
+      {
+        "title": "기능/비기능 요구사항 정제 및 검증 설계",
+        "items": [
+          "요구사항 모호 표현 정의 및 용어 정리",
+          "검증 가능 영역 재정의",
+          "T32 활용 M7 Core 동작 분석",
+          "C코드 기반 기능 추적 및 검증 설계 수립"
+        ]
+      }
+    ],
+    "techStack": "CANoe / CAPL / T32 / WireShark / VN5620 / VX1000 / SourceInsight / VSCode / Jira / Confluence",
+    "competencies": [
+      "ASPICE 기반 요구사항 분석 및 검증 설계 경험",
+      "CAN/CAN-FD/Ethernet(SOME/IP) 통신 프로토콜 이해",
+      "통신 오류 분석 및 이슈 해결 주도 경험",
+      "고객사(Hyundai/Kefico) 기술 협업 및 대응 경험",
+      "자동화 기반 검증 신뢰성 향상"
+    ],
+    "summary": "통신 요구사항을 단순 검증이 아닌, 설계 사양 관점에서 분석하고 요구사항 정합성을 재정의한 경험 보유"
+  },
+  "project-2": {
+    "title": "ADAS 제품군 통합 평가 및 검증 체계 구축 PL",
+    "meta": {
+      "customer": "현대모비스",
+      "period": "2023.10 – 2025.05",
+      "ecu": "SCAM4.8 / MAC400 / ADAS_DRV1.5 / MAR120 / MAR130 / MAR320 등",
+      "role": "통합 Project Leader (6~9명 조직 관리)"
+    },
+    "overview": [
+      "전방카메라 / ADAS_DRV / 코너레이더(MAR120, MAR130, MAR320, MBH2.0 등) 대상 고장진단 및 UDS 기반 통신 요구사항 검증 수행",
+      "VT System 기반 HILS 환경 구성",
+      "CANoe 기반 통합 평가/자동화 체계 구축"
+    ],
+    "tasks": [
+      {
+        "title": "진단/통신 요구사항 기반 검증 체계 고도화",
+        "items": [
+          "UDS 진단통신 요구사항 분석 및 검증 수행",
+          "고장진단(DTC) 동작 검증",
+          "신규 제어기(MAR130, MAR320) 대상 통합 CANoe 평가 환경 설계",
+          "고객사 테스트케이스 기반 자동화 스크립트 개발",
+          "통신 설계 이해 기반 환경 구축: CAN 통신 흐름 분석, Diagnostic Session / Service 흐름 기반 평가 설계",
+          "신규 ECU 통신 요구사항 반영 구조 설계"
+        ]
+      },
+      {
+        "title": "자동화 및 형상관리 체계 구축",
+        "items": [
+          "vTestStudio 기반 자동화 프레임워크 개발/유지보수",
+          "Bitbucket 기반 스크립트 형상관리 체계 정립",
+          "Jira/Confluence 기반 이슈 히스토리 관리 체계 개선",
+          "이전 SW Version 대비 개선 여부 추적 체계 도입 → 고객사 공식 채택"
+        ]
+      },
+      {
+        "title": "조직 리딩 및 검증 프로세스 개선",
+        "items": [
+          "6~9명 인력 운영 및 일정 관리",
+          "2인1조 체계 도입 → 장비 제약 해결",
+          "VT System HW Wiring 직접 구성",
+          "신규 인원 CANoe/장비 교육 체계 수립",
+          "고객 만족도 기반 계약 연장 및 신규 MAR130 수주"
+        ]
+      }
+    ],
+    "techStack": "VT System / VN1640 / CANoe / vTestStudio / Jira / Confluence / Bitbucket / SourceTree",
+    "competencies": [
+      "진단 및 통신 요구사항 분석 및 시스템 반영 경험",
+      "CAN 통신 분석 및 검증 환경 설계 경험",
+      "AUTOSAR 기반 진단 구조 이해(UDS/DTC 흐름)",
+      "글로벌 OEM Tier-1 협업 경험",
+      "PL 경험 (다수 ECU 병행 관리)"
+    ],
+    "summary": "다수 ECU 통신 요구사항을 통합 분석하여 신규 제어기 적용 시 재사용 가능한 통합 검증 아키텍처를 설계"
+  },
+  "project-3": {
+    "title": "Cyber Security 기능 검증 및 진단 통신 요구사항 분석",
+    "meta": {
+      "customer": "현대모비스",
+      "period": "2022.05 – 2023.06",
+      "ecu": "ADAS_PRK / ADAS_VP / CCU",
+      "role": "PL 겸 실무 (2인 프로젝트 리딩)"
+    },
+    "overview": [
+      "ADAS_PRK / ADAS_VP / CCU 대상 사이버 보안 기능 및 이더넷 기반 진단 통신 요구사항 검증 수행",
+      "ISO14229 (UDS) 기반 진단통신 검증",
+      "ISO/SAE 21434 대응 SecureFlash 검증",
+      "Ethernet TCP/IP 기반 진단 통신 패킷 분석"
+    ],
+    "tasks": [
+      {
+        "title": "SecurityAccess(0x27) 보안 요구사항 검증",
+        "subtitle": "기준: ISO14229 / ES95486-02",
+        "items": [
+          "Seed/Key 기반 인증 절차 검증",
+          "12개 테스트케이스 자동화 구현 (C#, Indigo 활용)",
+          "인증 실패/Retry 제한/Lockout 조건 검증",
+          "진단 보안 요구사항의 동작 흐름 분석 및 자동화 체계 구축"
+        ]
+      },
+      {
+        "title": "UDS 진단통신 요구사항 분석 및 자동화",
+        "subtitle": "기준: ES95486-02 / ES95486-12",
+        "items": [
+          "CANoe.DiVa 기반 자동화 평가 수행",
+          "UDS 변경 사양 반영을 위한 *.cdd 직접 수정 (CANdelaStudio)",
+          "Diagnostic Session / Service 흐름 분석",
+          "설계 스펙 대비 테스트 스펙 정합성 검증",
+          "요구사항-설계-테스트 스펙 간 정합성 분석 경험"
+        ]
+      },
+      {
+        "title": "SecureFlash 검증",
+        "subtitle": "기준: ISO/SAE 21434 / ES95489-02 / ES95486-52",
+        "items": [
+          "무결성 유지 RomData vs 변조 RomData 비교 검증",
+          "H-OTA Studio 기반 다운로드 시나리오 설계",
+          "이더넷 TCP/IP 패킷 분석 (WireShark)",
+          "무결성 위반 시 ECU 응답 검증",
+          "Secure Diagnostics 및 무결성 요구사항 해석 경험"
+        ]
+      }
+    ],
+    "techStack": "CANoe / CANoe.DiVa / CANdelaStudio / WireShark / H-OTA Studio / Indigo / C# / VN5620 / Jira / Confluence",
+    "competencies": [
+      "ISO/SAE 21434 기반 보안 요구사항 이해",
+      "SecurityAccess / SecureFlash 보안 기능 검증 경험",
+      "AUTOSAR 진단 구조 및 UDS 프로토콜 이해",
+      "Ethernet 기반 진단 통신 분석 경험",
+      "요구사항-설계-테스트 정합성 검증 경험"
+    ],
+    "summary": "보안 요구사항을 단순 테스트가 아닌, 설계 사양 및 통신 구조 관점에서 분석하고 자동화 기반으로 검증 체계를 구축"
+  },
+  "project-4": {
+    "title": "SVM/레이더 SW 기능 검증",
+    "meta": {
+      "customer": "현대모비스",
+      "period": "2021.03 – 2022.04",
+      "ecu": "ADASPRK / MAR320 / MAR120",
+      "role": "SW 기능 검증 엔지니어 (2인 프로젝트)"
+    },
+    "overview": [
+      "ADASPRK 제어기(SVM 기능) 요구사항 기반 기능 검증",
+      "MAR320 전방 레이더 HILS 기반 기능 시험",
+      "이후 MAR120 대상 UDS 진단통신 검증 수행"
+    ],
+    "tasks": [
+      {
+        "title": "SVM 기능 요구사항 기반 검증 체계 구축",
+        "items": [
+          "기능 요구사항 분석 및 테스트케이스 작성",
+          "vTestStudio 기반 자동화 스크립트 개발",
+          "요구사항–테스트–자동화 간 추적성 확보",
+          "변경/추가 요구사항 발생 시 산출물 유지보수",
+          "요구사항 중심 검증 프로세스 정립 → 프로젝트 계약 연장"
+        ]
+      },
+      {
+        "title": "레이더 HILS 기반 기능 검증",
+        "items": [
+          "dSPACE ASM 환경 기반 시나리오 시험",
+          "EgoVehicle / TargetVehicle 동적 시뮬레이션",
+          "MAR320 제어기 탐지 성능 검증",
+          "dSPACE–Vector 툴 연동 환경 운용",
+          "제어기 동작 로직 이해 기반 기능 검증 수행"
+        ]
+      },
+      {
+        "title": "UDS 진단통신 검증 수행 (MAR120)",
+        "items": [
+          "ISO14229 기반 UDS 서비스 검증",
+          "CAN 기반 진단 메시지 분석",
+          "진단통신 검증 역량 인정 → Cyber Security 프로젝트 수주로 확장"
+        ]
+      }
+    ],
+    "techStack": "VN1640 / CANoe / vTestStudio / dSPACE (AutomationDesk / ModelDesk / ControlDesk / SYNECT) / CANape",
+    "competencies": [
+      "기능 요구사항 기반 테스트 설계 경험",
+      "CAN 통신 및 UDS 진단통신 이해",
+      "요구사항–테스트 간 추적성 확보 경험",
+      "HILS 기반 제어기 기능 검증 경험"
+    ],
+    "summary": "요구사항 중심 검증 프로세스 정립 및 HILS 기반 SVM/레이더/UDS 진단통신 검증 경험"
+  },
+  "project-5": {
+    "title": "OMU HILS Qualification 시험 (ASPICE 기반 검증 전과정 수행)",
+    "meta": {
+      "customer": "SMR Korea / 현대자동차 JW1 적용",
+      "period": "2020.11 – 2021.02",
+      "ecu": "OMU",
+      "role": "SW 검증 엔지니어 (3인 프로젝트)"
+    },
+    "overview": [
+      "OMU 제어기 HILS 기반 Qualification 시험 수행",
+      "A-SPICE 대응 가능 수준의 검증 프로세스 적용",
+      "시스템 요구사항(SyRS) 기반 SW 기능 검증"
+    ],
+    "tasks": [
+      {
+        "title": "시스템 요구사항 분석 및 정제",
+        "items": [
+          "고객사 SyRS 분석",
+          "기능 단위 6개 그룹으로 재분류",
+          "테스트 가능/불가 여부 판별",
+          "모호·정량 미정의 항목 질의 및 명확화",
+          "검증 가능 요구사항으로 재정의"
+        ]
+      },
+      {
+        "title": "요구사항 기반 Test Specification 작성",
+        "items": [
+          "130여 개 요구사항 → 500여 개 테스트케이스 도출",
+          "요구사항-테스트 간 100% Traceability 확보",
+          "ASIL 등급 반영 결과 보고서 작성",
+          "요구사항 기반 테스트 설계 역량 확보"
+        ]
+      },
+      {
+        "title": "HILS 환경 구성 및 자동화 평가",
+        "items": [
+          "SW 검증 환경 구성 (HW Wiring 포함)",
+          "자동화 Test Script 개발 및 수행",
+          "총 9건 이슈 검출",
+          "수정 SW 대상 Regression Test 수행",
+          "End-to-End 검증 프로세스 전 과정 수행 경험"
+        ]
+      }
+    ],
+    "techStack": "HILS 환경 구성 / 요구사항 분석 / Test Specification / 자동화 스크립트 개발 / Regression Test / A-SPICE 대응 문서 작성 (영문)",
+    "competencies": [
+      "A-SPICE 대응 검증 프로세스 경험",
+      "시스템 요구사항 기반 테스트 설계 경험",
+      "요구사항-테스트 Traceability 확보 경험",
+      "HILS 기반 End-to-End 검증 수행 경험"
+    ],
+    "summary": "A-SPICE 대응 가능 수준의 검증 프로세스 적용 및 시스템 요구사항 기반 End-to-End 검증 전 과정 수행 경험"
+  },
+  "project-6": {
+    "title": "바디 통합 HILS 검증 (다수 ECU 협조 제어 검증)",
+    "meta": {
+      "customer": "현대오트론",
+      "period": "2020.02 – 2020.11",
+      "ecu": "IBU / ICU / SMK / MFSW / CLU",
+      "role": "SW 기능 검증 엔지니어 (5인 프로젝트)"
+    },
+    "overview": [
+      "IBU / ICU / SMK / MFSW / CLU 등 바디 제어기 협조 제어 검증",
+      "실물 ECU + 가상 ECU 혼합 HILS 환경 구성",
+      "기능 요구사항 기반 통합 동작 검증 수행"
+    ],
+    "tasks": [
+      {
+        "title": "다수 ECU 협조 제어 기능 요구사항 분석",
+        "items": [
+          "제어기별 기능 사양서 분석",
+          "상호 연동 로직 기반 통합 동작 검증",
+          "협조 제어 시나리오 기반 자동화 테스트 수행",
+          "시스템 관점에서 기능 요구사항 이해"
+        ]
+      },
+      {
+        "title": "HILS TestBench 기반 통합 검증",
+        "items": [
+          "Veristand / CANoe / NI 장비 기반 환경 운용",
+          "자동화 테스트 스크립트 실행 및 로그 분석",
+          "실물 ECU + 가상 ECU 통합 검증 수행"
+        ]
+      },
+      {
+        "title": "Root Cause 분석 역량 확보",
+        "items": [
+          "Fail 발생 시: 제어기 사양 이슈 여부 분석",
+          "테스트 스크립트 오류 여부 분석",
+          "로그 기반 통신/기능 동작 추적",
+          "기능 로직 기반 원인 도출",
+          "기능 사양 기반 논리적 이슈 분석 역량 확보"
+        ]
+      }
+    ],
+    "techStack": "Veristand / CANoe / VN1640 / NI HILS 장비 / dysnomia",
+    "competencies": [
+      "시스템 레벨 기능 요구사항 이해 경험",
+      "다수 ECU 협조 제어 구조 분석 경험",
+      "HILS 기반 통합 검증 수행 경험",
+      "통신 로그 기반 문제 해결 경험"
+    ],
+    "summary": "다수 ECU 협조 제어 구조 분석 및 HILS 기반 통합 검증 수행 경험"
+  },
+  "project-7": {
+    "title": "McLaren CMS SW HILS Qualification Test",
+    "meta": {
+      "customer": "SMR Germany",
+      "period": "2019.08 – 2020.01",
+      "ecu": "CMS",
+      "role": "SW Qualification Test 엔지니어 (27인 글로벌 프로젝트)"
+    },
+    "overview": [
+      "CMS 제어기 SW Qualification Test 수행",
+      "ISO 26262 ASIL-B 대응 인증 목적 프로젝트",
+      "SWRS 기반 100% Requirement Coverage 달성"
+    ],
+    "tasks": [
+      {
+        "title": "SWRS 기반 Test Case Specification 작성",
+        "items": [
+          "CMS SWRS 요구사항 분석",
+          "Test Case Specification 작성 (영문)",
+          "요구사항 대비 100% Coverage 확보",
+          "Safety 요구사항 기반 테스트 설계 경험"
+        ]
+      },
+      {
+        "title": "ISO26262 대응 문서 산출물 작성",
+        "items": [
+          "ASIL-B 등급 기준에 따른 검증 산출물 작성",
+          "Safety 관점 결과 보고서 작성",
+          "국제 인증 대응 문서화 경험"
+        ]
+      },
+      {
+        "title": "글로벌 협업 경험",
+        "items": [
+          "독일 고객사와 화상회의 참여",
+          "영어 기반 기술 문서 작성 및 커뮤니케이션",
+          "인턴 → 정규직 전환 (프로젝트 성과 인정)"
+        ]
+      }
+    ],
+    "techStack": "SWRS 분석 / Test Case Specification / ISO26262 ASIL-B 대응 / 영문 기술 문서 작성",
+    "competencies": [
+      "Safety 요구사항 기반 분석 경험",
+      "요구사항 100% Coverage 확보 경험",
+      "글로벌 OEM 협업 경험",
+      "영문 기술 문서 작성 능력"
+    ],
+    "summary": "ISO 26262 ASIL-B 대응 및 SWRS 기반 100% Requirement Coverage 달성 경험"
+  }
+}
